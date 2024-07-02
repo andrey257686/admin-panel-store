@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Вход в Личный кабинет</h1>
+  </header>
+  <main class="container">
+    <div class="form-wrapper" id="form-wrapper">
+      <form class="form" id="login-form">
+        <div class="form__title">Вход</div>
+        <input type="text" class="form__input" placeholder="Логин">
+        <input type="password" class="form__input" placeholder="Пароль">
+        <button type="submit" class="form__button">Войти</button>
+        <button type="button" class="toggle-button" onclick="toggleForms()">Перейти к регистрации</button>
+      </form>
+
+      <form class="form form--back" id="registration-form">
+        <div class="form__title">Регистрация</div>
+        <input type="text" class="form__input" placeholder="Логин">
+        <input type="password" class="form__input" placeholder="Пароль">
+        <button type="submit" class="form__button">Зарегистрироваться</button>
+        <button type="button" class="toggle-button" onclick="toggleForms()">Перейти к входу в ЛК</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
