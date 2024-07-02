@@ -10,6 +10,9 @@ if (!USERNAME) {
   localStorage.setItem("username", USERNAME);
 }
 
+const adminName = document.querySelector(".header__admin-name");
+adminName.textContent = USERNAME;
+
 function showProducts() {
   const productsList = document.querySelector(".product-list");
   productsList.innerHTML = "";
@@ -28,6 +31,7 @@ function showProducts() {
 
 function saveProduct(event) {
   event.preventDefault();
+  const modalContent = document.querySelector(".modal__content");
   const productName = document.getElementById("product-name").value;
   const productQuantity = document.getElementById("product-quantity").value;
   const productPrice = document.getElementById("product-price").value;
@@ -44,9 +48,7 @@ function saveProduct(event) {
       modalError.style.display = "none";
     }, 3000);
   } else {
-    productName.value = "";
-    productQuantity.value = "";
-    productPrice.value = "";
+    modalContent.reset();
     PRODUCTS.push(product);
     localStorage.setItem("products", JSON.stringify(PRODUCTS));
     toggleAddProductModal(false);

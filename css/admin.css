@@ -49,8 +49,10 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ccc;
   cursor: pointer;
+  background-image: url(../assets/profile.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .button--logout {
@@ -143,7 +145,6 @@ body {
   text-decoration: underline;
 }
 
-/* Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -182,7 +183,6 @@ body {
   outline: none;
   border-color: var(--main-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* box-shadow: 0 0 10px rgba(76, 175, 80, 0.1); */
 }
 
 .modal__button {

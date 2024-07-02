@@ -21,7 +21,6 @@ body {
 
 .header {
   background-color: var(--main-color);
-  /* background-color: #4caf50; */
   height: 60px;
   padding: 0 20px;
   display: flex;
@@ -90,7 +89,6 @@ body {
 
 .form__input {
   width: calc(100% - 20px);
-  /* margin-bottom: 10px; */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -108,7 +106,6 @@ body {
   outline: none;
   border-color: var(--main-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* box-shadow: 0 0 10px rgba(76, 175, 80, 0.1); */
 }
 
 .form__button {
