@@ -14,18 +14,19 @@
     <div class="form-wrapper" id="form-wrapper">
       <form onsubmit="goToAdminPanel(event)" class="form" id="login-form">
         <div class="form__title">Вход</div>
-        <input type="text" class="form__input" placeholder="Логин">
-        <input type="password" class="form__input" placeholder="Пароль">
+        <input type="text" class="form__input" id="login-input" placeholder="Логин">
+        <input type="password" class="form__input" id="password-input" placeholder="Пароль">
+        <span class="form__error"></span>
         <button type="submit" class="form__button">Войти</button>
         <button type="button" class="toggle-button" onclick="toggleForms()">Перейти к регистрации</button>
       </form>
 
-      <form class="form form--back" id="registration-form">
+      <form onsubmit="registerUser(event)" class="form form--back" id="registration-form">
         <div class="form__title">Регистрация</div>
-        <input type="text" class="form__input" placeholder="Логин">
-        <input type="password" class="form__input" placeholder="Пароль">
+        <input type="text" class="form__input" id="register-login-input" placeholder="Логин">
+        <input type="password" class="form__input" id="register-password-input" placeholder="Пароль">
         <button type="submit" class="form__button">Зарегистрироваться</button>
-        <button type="button" class="toggle-button" onclick="toggleForms()">Перейти к входу в ЛК</button>
+        <button type="button" class="toggle-button" onclick="toggleForms()">Перейти ко входу в ЛК</button>
       </form>
     </div>
   </main>

@@ -194,6 +194,7 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .modal__button:hover {
@@ -213,4 +214,11 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal__error {
+  color: red;
+  font-size: 16px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
 }
