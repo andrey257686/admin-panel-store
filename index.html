@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Login</title>
 </head>
 <body>
   <header class="header">
@@ -12,7 +12,7 @@
   </header>
   <main class="container">
     <div class="form-wrapper" id="form-wrapper">
-      <form class="form" id="login-form">
+      <form onsubmit="goToAdminPanel(event)" class="form" id="login-form">
         <div class="form__title">Вход</div>
         <input type="text" class="form__input" placeholder="Логин">
         <input type="password" class="form__input" placeholder="Пароль">

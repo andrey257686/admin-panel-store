@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+  <title>Admin</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Личный кабинет</h1>
+    <div class="header__admin-info">
+      <span class="header__admin-name">Админ</span>
+      <!-- <div class="header__admin-avatar"></div> -->
+      <div class="header__admin-avatar">
+        <button class="button button--logout">Выйти</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="admin-panel">
+      <button type="button" class="admin-panel__button" id="add-product">Добавить товар</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-list__item">
+        <span class="product-list__name">Название товара</span>
+        <span class="product-list__price">Цена</span>
+        <span class="product-list__quantity">Кол-во</span>
+        <span class="product-list__remove">X</span>
+      </div>
+
+      <div class="product-list__item">
+        <span class="product-list__name">Название товара</span>
+        <span class="product-list__price">Цена</span>
+        <span class="product-list__quantity">Кол-во</span>
+        <span class="product-list__remove">X</span>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="addProductModal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close" id="close-modal">&times;</span>
+        <div class="modal__title">Добавить товар</div>
+        <input type="text" id="product-name" class="modal__input" placeholder="Название">
+        <input type="number" id="product-quantity" class="modal__input" placeholder="Количество">
+        <input type="number" id="product-price" class="modal__input" placeholder="Цена">
+        <button class="modal__button" id="save-button">Сохранить</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
